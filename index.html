@@ -92,14 +92,14 @@
           <form>
             <div class="form-group">
             <label for="first_name"></label>
-            <input aria-label="first_name" aria-required="true" class="form-control half-width" id="first_name" name="account[first_name]" placeholder="First Name" type="text">
+            <input  class="form-control half-width" id="first_name" placeholder="First Name" type="text">
             <label for="last_name"></label>
-            <input aria-label="last_name" aria-required="true" class="form-control half-width right" id="last_name" name="account[last_name]" placeholder="Last Name" type="text">
+            <input class="form-control half-width right" id="last_name" name="account[last_name]" placeholder="Last Name" type="text">
             <label for="emailAddress"></label>
-            <input aria-label="emailaddress" aria-required="true" class="form-control" id="emailAddress" name="account[email]" placeholder="Email Address" type="text">
+            <input class="form-control" id="emailAddress" name="account[email]" placeholder="Email Address" type="text">
             <label for="phoneNumber"></label>
-            <input aria-label="phonenumber" aria-required="false" class="form-control" id="phoneNumber" name="account[phone]" placeholder="Phone Number" type="text">
-            <button type="submit">Email me the fact sheet</button>
+            <input class="form-control" id="phoneNumber" name="account[phone]" placeholder="Phone Number" type="text">
+            <button class="a-button" type="submit">Email me the fact sheet</button>
           </div>
           </form>
         </div>
@@ -116,27 +116,35 @@
         </div>
       </section>
       <section class="what-our-students-say">
-        <div class="quote-box">
-          <h2>What our students say</h2>
-          <h2> The Iron Yard gave me confidence and set me on a career path I'm proud of.</h2>
-          <p>  - Jesse Crow, UI Developer at IBM Design </p>
-          <div class="btn-styles left">
+        <div class=" container">
+          <div class="row">
+            <div class="col-xs-12 column col-md-4 gridbase col-lg-4">
+              <div class="quote-box">
+                <h2>What our students say</h2>
+                <h3> "    The Iron Yard gave me confidence and set me on a career path I'm proud of.    "</h3>
+                <p>  - Jesse Crow, UI Developer at IBM Design </p>
+                <div class="btn-styles left">
                   <a class="btn neptune-colored-btn" href="#">See our student stories</a>
+                </div>
+              </div>
+            </div>
+          <div class="col-xs-12 column col-md-7 gridbase col-lg-7">
+            <div class="students">
+              <div class="female">
+                <img src="images/female-thumb.png"/>
+                <p> Amber Joyner was a middle school teacher before attending The Iron Yard. Today, she has a job she loves as an Interaction Engineer at a healthcare company.</p>
+                <h4 class="name">Amber Joyner</h4>
+                <h5>Interaction Engineer</h5>
+              </div>
+              <div class="male">
+                <img src="images/male-thumb.jpg"/>
+                <p> As a recent college grad, Alex was on a path to a law degree when he realized it wasn't for him. He now works as a developer for an online ticketing company.</p>
+                <h4 class="name">Alex Soper</h4>
+                <h5>UI Engineer</h5>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="students">
-          <div class="female">
-            <img src="images/female-thumb.png"/>
-            <p> Amber Joyner was a middle school teacher before attending The Iron Yard. Today, she has a job she loves as an Interaction Engineer at a healthcare company.</p>
-            <h2 class="name">Amber Joyner</h2>
-            <h3>Interaction Engineer</h3>
-          </div>
-          <div class="male">
-            <img src="images/male-thumb.jpg"/>
-            <p> As a recent college grad, Alex was on a path to a law degree when he realized it wasn't for him. He now works as a developer for an online ticketing company.</p>
-            <h2 class="name">Alex Soper</h2>
-            <h3>UI Engineer</h3>
-          </div>
+      </div>
         </div>
       </section>
       <section class="employers">
@@ -205,13 +213,13 @@
               <p>Enter your phone number below and we'll give you a ring in the next few days.</p>
               <form>
                 <div class="form-group">
-                  <label for="first_name">First Name</label>
-                  <input aria-label="first_name" aria-required="true" class="form-control half-width"  name="account[first_name]" placeholder="First Name" type="text">
-                  <label for="last_name">Last Name</label>
-                  <input aria-label="last_name" aria-required="true" class="form-control half-width right" name="account[last_name]" placeholder="Last Name" type="text">
-                  <label for="phoneNumbner">Email Address</label>
-                  <input aria-label="emailaddress" aria-required="true" class="form-control"   name="account[email]" placeholder="Email Address" type="text">
-                  <button>Gimme a ring</button>
+                  <label for="first_name"></label>
+                  <input  class="form-control first_name half-width"  name="account[first_name]" placeholder="First Name" type="text">
+                  <label for="last_name"></label>
+                  <input class="form-control half-width right" name="account[last_name]" placeholder="Last Name" type="text">
+                  <label for="phoneNumbner"></label>
+                  <input class="form-control"   name="account[email]" placeholder="Email Address" type="text">
+                  <button class="a-button">Gimme a ring</button>
                 </div>
               </form>
             </div>
@@ -219,16 +227,16 @@
             <div class="col-xs-12 col-sm-6 column col-md-4 gridbase col-lg-3">
               <div class="form">
                 <h4>We'll emaill you</h4>
-                <p>Enter your email below and we'll be in touch shortly.</p>
+                <p id="margin-needed">Enter your email below and we'll be in touch shortly.</p>
                 <form>
                   <div class="form-group">
-                    <label for="first_name">First Name</label>
-                    <input aria-label="first_name" aria-required="true" class="form-control half-width"  name="account[first_name]" placeholder="First Name" type="text">
-                    <label for="last_name">Last Name</label>
-                    <input aria-label="last_name" aria-required="true" class="form-control half-width right" name="account[last_name]" placeholder="Last Name" type="text">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input aria-label="phonenumber" aria-required="false" class="form-control"  name="account[phone]" placeholder="Phone Number" type="text">
-                    <button>Email me</button>
+                    <label for="first_name"></label>
+                    <input class="form-control half-width first_name"  name="account[first_name]" placeholder="First Name" type="text">
+                    <label for="last_name"></label>
+                    <input  class="form-control half-width right" name="account[last_name]" placeholder="Last Name" type="text">
+                    <label for="phoneNumber"></label>
+                    <input class="form-control"  name="account[phone]" placeholder="Phone Number" type="text">
+                    <button class="a-button">Email me</button>
                   </div>
                 </form>
               </div>
@@ -244,7 +252,6 @@
           <li class="footer-ul-label">COURSES</li>
           <li class="footer-li"><a href="#">Back-End Engineering</a></li>
           <li class="footer-li"><a href="#">Design</a></li>
-
           <li class="footer-li"><a href="#">Front-End Engineering</a></li>
           <li class="footer-li"><a href="#">Mobile Engineering</a></li>
           <li class="footer-li"><a href="#">Kids Classes</a></li>
@@ -253,25 +260,25 @@
           <li class="footer-li"><a href="#">FAQs</a></li>
         </ul>
         <ul class="col-sm-6 col-md-6 col-lg-3">
-          <li class="footer-ul-label">ABOUT</li>
-          <li class="footer-li"><a href="#">Our Story</a></li>
-          <li class="footer-li"><a href="#">History</a></li>
-          <li class="footer-li"><a href="#">The Iron Yard Team</a></li>
-          <li class="footer-li"><a href="#">Jobs at The Iron Yard</a></li>
+          <li >ABOUT</li>
+          <li ><a href="#">Our Story</a></li>
+          <li ><a href="#">History</a></li>
+          <li ><a href="#">The Iron Yard Team</a></li>
+          <li ><a href="#">Jobs at The Iron Yard</a></li>
         </ul>
         <ul class="col-sm-6 col-md-6 col-lg-4">
-          <li class="footer-ul-label single-footer-links"><a href="#">CORPORATE TRAINING</a></li>
-          <li class="footer-ul-label single-footer-links"><a href="#">STORIES</a></li>
-          <li class="footer-ul-label single-footer-links"><a href="#" target="_blank">BLOG</a></li>
-          <li class="footer-ul-label single-footer-links"><a href="#">PRESS/NEWS</a></li>
-          <li class="footer-ul-label single-footer-links"><a href="#">CONTACT</a></li>
+          <li><a class="single-footer-links" href="#">CORPORATE TRAINING</a></li>
+          <li><a class="single-footer-links" href="#">STORIES</a></li>
+          <li><a class="single-footer-links" href="#" target="_blank">BLOG</a></li>
+          <li><a class="single-footer-links" href="#">PRESS/NEWS</a></li>
+          <li><a class="single-footer-links" href="#">CONTACT</a></li>
         </ul>
       </div>
       <div class="tiy-logo col-xs-4 col-md-4 col-lg-4 ">
           <img src="images/logo.svg" alt="The Iron Yard Logo">
           <div class="copyright">©2016 Iron Yard. All Rights Reserved</div>
-          <div class="privacy-policy"><a href="#">Privacy Policy</a></div>
-          <div class="terms"><a href="#">Terms of Use</a></div>
+          <div class="privacy-policy"><a class="terms" href="#">Privacy Policy</a></div>
+          <div class="terms"><a class="terms" href="#">Terms of Use</a></div>
         </div>
     </div>
 
