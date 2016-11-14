@@ -241,13 +241,16 @@ border-bottom: 2px solid #d2d2d2;
     font-style: italic;
     font-size: 16px;
     outline: none;
+    border-radius: 0px;
 }
 .half-width{
   width: 48%;
+
 }
-#first_name {
-    margin: 0px 2.5% 0px 0px;
+.half-width.right {
+  float: right;
 }
+
 .form-group {
   text-align: center;
   margin-top: 10px;
