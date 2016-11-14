@@ -9,6 +9,9 @@ html {
 .right {
   float: right;
 }
+.centertext {
+  text-align: center;
+}
 h1 , h2 , h3 , h4 , h5 , h6 {
   font-family: 'PT Serif', serif;
 }
@@ -74,17 +77,15 @@ header {
   padding: 10px 15px;
 }
 
+/*hero*/
+
 .hero {
   background: url("../images/amy-home-web2.jpg") center center / cover no-repeat transparent;
   background-size: cover;
-  padding: 10px 70px;
+  padding: 10px 15px;
 
 }
-.text-container {
-  margin: 195px 0px;
-}
 .text-container h1 {
-  color: white;
   font-size: 4.5rem;
   font-weight: 500;
   margin-bottom: 0px;
@@ -93,50 +94,50 @@ header {
 .text-container h2 {
   color: white;
   font-size: 1.6rem;
+  margin: 20px 0px 20px 0px;}
+
+  }
+.text-container {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.text-container h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.text-container h2 {
+  color: white;
+  font-size: 1.2rem;
   margin: 20px 0px 20px 0px;
-}
 
-.typed {
-    font-weight: 500;
-}
-
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
 }
 .text-container .btn {
   background: #6fbbb7;
   color: white;
   font-size: 1.3rem;
   padding: 7px 30px 7px 10px;
+  margin-bottom: 25px;
 
 }
+/* press */
+
 .press {
   background-color: #EEEEEE;
-  padding: 10px 75px;
+  padding: 10px 15px;
+  display: none;
 }
-.press img {
-  width: 155px;}
+.media-logo {
+  width: 14%;}
+
+/* what we offer */
 
 .what-we-offer {
-  padding:50px 65px;
+  padding:50px 0px;
 }
 
 .what-we-offer h3{
@@ -148,13 +149,33 @@ header {
 .what-we-offer p {
   line-height: 1.8;
   margin-bottom: 20px;
+  font-size: 1.2rem;
 }
-.form {
+/*.form {
   float: right;
   background-color: #EBEBEB;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  width: 100%;}*/
 
+
+.greybox {
+border-radius: 10px;
+margin: 0 auto;
+background-color: #EBEBEB;
+padding: 20px;
+width: 100%;
+border: none;
+border-bottom: 2px solid #d2d2d2;
+}
+.greybox p {
+  font-size: 1rem;
+  line-height: 2;
+}
+.greybox h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .form-control{
     float: left;
@@ -168,7 +189,7 @@ header {
   width: 48%;
 }
 #first_name {
-    margin: 0px 2.8% 0px 0px;
+    margin: 0px 2.5% 0px 0px;
 }
 .form-group {
   text-align: center;
@@ -188,11 +209,14 @@ header {
   border-bottom: 2px solid #4fa8a3;
   width: 100%;
 }
+
+/* Discover out Courses */
+
 .discover-our-courses {
   background-color: #EEEEEE;
   clear: both;
   text-align: center;
-  padding: 40px 75px 70px 75px;
+  padding: 40px 15px 75px 15px;
   border-bottom: 1px solid #c1c1c1;
 }
 .discover-our-courses h2 {
@@ -202,13 +226,17 @@ header {
 }
 .discover-our-courses p {
   font-size: 1.2rem;
- margin: 30px 200px 60px 200px;
- Color: #576268;
+  Color: #576268;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 .discover-our-courses h3 {
   text-transform: uppercase;
-  font-size: 1.5rem;
-
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.course-icons {
+  margin-top: 100px;
 }
 
 .frontend {
@@ -225,8 +253,12 @@ header {
 .interface {
   color: #2AA2AE;
 }
+
+
+/* what our students say */
+
 .what-our-students-say {
-  padding: 50px 60px;
+  padding: 50px 0px;
   overflow: hidden;
 }
 .quote-box {
@@ -306,6 +338,59 @@ header {
   font-weight: lighter;
 
 }
+
+
+@media only screen and (min-width: 601px){
+    .text-container {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .press {
+      display: block;
+    }
+    .media-logo {
+      width: 30%;
+    }
+  }
+
+  @media only screen and (min-width: 640px){
+    .media-logo {
+    width: 13%;
+    }
+  }
+  @media (min-width: 768px){
+    .container, .footer {
+      width: 750px;
+    }
+  }
+
+  @media (min-width: 992px){
+.container, .footer {
+    width: 970px;
+  }
+}
+
+  @media only screen and (min-width: 1025px){
+    .text-container {
+      margin: 195px 0px;
+    }
+    .text-container h1 {
+      font-size: 4.3rem;
+      font-weight: bold;
+    }
+    .text-container h2 {
+      color: white;
+      font-size: 2rem;
+      margin: 20px 0px 20px 0px;
+  }
+}
+  @media (min-width: 1200px){
+  .container, .footer {
+  width: 1170px;
+  }
+}
+
+
 .employers {
   clear: both;
   background: url("../images/employers-image.jpg") center center / cover no-repeat transparent;
@@ -364,10 +449,7 @@ header {
   font-size: 1.2rem;
 
 }
-.form p {
-  font-size: 1rem;
-  line-height: 2;
-}
+
 #margin-needed {
   margin-bottom: 38px;
 }
@@ -413,8 +495,10 @@ footer a {
 .terms {
   font-size: 12px;
   color: #b5b7be;
+
 }
-.form h4 {
-  font-family: 'Open Sans', sans-serif;
-  
-}
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
