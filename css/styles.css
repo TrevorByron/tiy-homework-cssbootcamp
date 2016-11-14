@@ -52,7 +52,7 @@ header {
 .l-header-nav li {
   color: white;
   font-size: .9rem;
- display: inline-block;
+ display: none;
   margin: 14px;
   color: white;
 }
@@ -65,7 +65,7 @@ header {
 .l-header-nav-secondary  li{
   color: white;
   font-size: .9rem;
- display: inline-block;
+ display: none;
   margin: 8px;
   color: white;
 
@@ -123,12 +123,68 @@ header {
   margin: 20px 0px 20px 0px;
 
 }
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 30px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: whites;
+  }
+}
 .text-container .btn {
   background: #6fbbb7;
   color: white;
   font-size: 1.3rem;
   padding: 7px 30px 7px 10px;
   margin-bottom: 25px;
+
 
 }
 /* press */
@@ -158,12 +214,6 @@ header {
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
-/*.form {
-  float: right;
-  background-color: #EBEBEB;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100%;}*/
 
 
 .greybox {
@@ -535,12 +585,12 @@ footer a {
         top: 20px;
     }
   }
-  @media (max-width: 706){
+  @media (min-width: 706){
     .l-header-nav {
-      display: none;
+      display: inline-block;
   }
   .l-header-nav-secondary{
-    display: none;
+    display: inline-block;
   }
 }
 
